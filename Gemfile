@@ -37,7 +37,10 @@ gem 'mini_racer'
 #end
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of d8e0672... Iteration 4 - added rspec
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
