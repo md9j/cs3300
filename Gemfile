@@ -26,8 +26,17 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+#comment out rspec and replace in accordance with project instructions
+#gem 'rspec', '~> 3.0' # >= 3.0 and < 4.0, what the fucking internet said to do
 
-gem 'rspec', '~> 3.0' # >= 3.0 and < 4.0, what the fucking internet said to do
+#mini_racer per project instructions
+gem 'mini_racer'
+  
+#group :development, :test do
+#  gem 'rspec-rails', '~> 3.7'
+#end
+
+
 
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
