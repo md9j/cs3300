@@ -73,11 +73,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
-<<<<<<< HEAD
-    docile (1.4.0)
-=======
     diff-lcs (1.4.4)
->>>>>>> parent of 04f2cc4... Iteration 4 - added simplecov
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.4)
