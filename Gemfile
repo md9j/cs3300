@@ -27,6 +27,15 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#added 29OCT2021 - class instructions
+gem 'mini_racer'
+  
+group :development, :test do
+  gem 'rspec-rails', '~> 3.7'
+  gem 'capybara', '>= 2.15' #copied from below, class instructions did not specify version and failed first install
+end
+
+#already existed
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
@@ -62,6 +71,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  #class instructions, simplecov for code coverage reports
+  gem 'simplecov', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
