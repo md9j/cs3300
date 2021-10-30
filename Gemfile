@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+#comment out rspec and replace in accordance with project instructions
+#gem 'rspec', '~> 3.0' # >= 3.0 and < 4.0, what the fucking internet said to do
 
 #added 29OCT2021 - class instructions
 gem 'mini_racer'
