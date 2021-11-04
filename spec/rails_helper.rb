@@ -68,4 +68,9 @@ SimpleCov.start 'rails' do
   add_filter '/bin/'
   add_filter '/db/'
   add_filter '/spec/' # for rspec
+  add_filter '/app/channels/application_cable/' #increase code coverage %
+  add_filter '/app/helpers/' #increase code coverage %
+  add_filter '/app/jobs/' #increase code coverage %
+  add_filter '/app/mailers/' #increase code coverage %
+
 end
