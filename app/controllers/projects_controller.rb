@@ -22,11 +22,12 @@ class ProjectsController < ApplicationController
   # POST /projects or /projects.json
   def create
     @project = Project.new(project_params)
-    #added 16NOV2021 before_action :authenticate_user! per class/devise instruction
-    before_action :authenticate_user!
-    member_signed_in?
-    current_member
-    member_session  
+    # #added 16NOV2021 before_action :authenticate_user! per class/devise instruction
+    # before_action :authenticate_user!
+    # member_signed_in?
+    # current_member
+    # member_session  
+   
 
     respond_to do |format|
       if @project.save
@@ -41,11 +42,11 @@ class ProjectsController < ApplicationController
 
   # PATCH/PUT /projects/1 or /projects/1.json
   def update
-    #added 16NOV2021 before_action :authenticate_user! per class/devise instruction
-    before_action :authenticate_user!
-    member_signed_in?
-    current_member
-    member_session 
+    # #added 16NOV2021 before_action :authenticate_user! per class/devise instruction
+    # before_action :authenticate_user!
+    # member_signed_in?
+    # current_member
+    # member_session 
 
     respond_to do |format|
       if @project.update(project_params)
@@ -60,11 +61,11 @@ class ProjectsController < ApplicationController
 
   # DELETE /projects/1 or /projects/1.json
   def destroy
-    #added 16NOV2021 before_action :authenticate_user! per class/devise instruction
-    before_action :authenticate_user!
-    member_signed_in?
-    current_member
-    member_session 
+    # #added 16NOV2021 before_action :authenticate_user! per class/devise instruction
+    # before_action :authenticate_user!
+    # member_signed_in?
+    # current_member
+    # member_session 
 
     @project.destroy
     respond_to do |format|
