@@ -63,7 +63,7 @@ class ProjectsController < ApplicationController
   # DELETE /projects/1 or /projects/1.json
   def destroy
     # #added 16NOV2021 before_action :authenticate_user! per class/devise instruction
-    # before_action :authenticate_user!
+    #before_action :authenticate_user!
     # member_signed_in?
     # current_member
     # member_session 
