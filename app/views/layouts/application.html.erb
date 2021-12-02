@@ -1,15 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Portfolio</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
+    <meta charset="utf-8">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio">
+    <meta name="Michael Johnston" content="Michael Johnston and Bootstrap contributors">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Johnston Portfolio</title>
+
+    <!-- Custom styles for this template -->
+    <link href="application.scss" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
-  </body>
+  <%= render 'layouts/navbar'%> 
+
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Hello?</h1>
+          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+    
+   
+    </main>
+  
+    <footer class="container">
+      <p>&copy; Michael Johnston 2021</p>
+    </footer>
+
+
+
+    </body>
 </html>

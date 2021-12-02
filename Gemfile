@@ -82,5 +82,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#added 16NOV2021 - class instriuctions
+# added 16NOV2021 - class instriuctions
 gem 'devise'
+
+# added 01DEC2021
+gem 'bootstrap', '~> 4.6.1'
+# added 01DEC2021, required when using Rails 5.1+ (this app == 5.2.6)
+gem 'jquery-rails' 
