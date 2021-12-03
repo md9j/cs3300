@@ -13,30 +13,73 @@
 
     <!-- Custom styles for this template -->
     <link href="application.scss" rel="stylesheet">
-  </head>
+    <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
 
-  <body>
-  <%= render 'layouts/navbar'%> 
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
 
-
-    <main role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Hello?</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-        </div>
-      </div>
-    
-   
-    </main>
   
-    <footer class="container">
-      <p>&copy; Michael Johnston 2021</p>
-    </footer>
+</head>
+<body>
+  
+<style>
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+</style>
+
+
+</head>
+<body>
+
+<main>
+<div class="container py-4">
+<header class="pb-3 mb-4 border-bottom">
+<a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+  <span class="fs-4">Johnston Portfolio</span>
+  <p> <%= link_to 'Projects', projects_path %> 
+  <% if user_signed_in? %> 
+    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_registration_path(resource_name) %> 
+    <%= link_to "Log in", new_session_path(resource_name) %>
+  <% end %>
+
+  
+  </p>
+</a>
+</header>
+
+<div class="p-5 mb-4 bg-light rounded-3">
+<%= yield %>
+</div>
+
+<footer class="pt-3 mt-4 text-muted border-top">
+&copy; 2021
+</footer>
+</div>
+</main>
 
 
     </body>
