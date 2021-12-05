@@ -89,3 +89,5 @@ gem 'devise'
 gem 'bootstrap', '~> 4.6.1'
 # added 01DEC2021, required when using Rails 5.1+ (this app == 5.2.6)
 gem 'jquery-rails' 
+
+gem 'tether-rails'
