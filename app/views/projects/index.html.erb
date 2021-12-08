@@ -17,8 +17,10 @@
         <td><%= project.title %></td>
         <td><%= project.description %></td>
         <td><%= button_to 'Show', project, method: :get %></td>
+        <% if user_signed_in? %> 
         <td><%= button_to 'Edit', edit_project_path(project), method: :get %></td>
         <td><%= button_to 'Destroy', project, :method => :delete %></td>
+          <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +28,5 @@
 
 <br>
 
-<%= link_to 'New Project', new_project_path %>
+<%= button_to 'New Project', new_project_path, method: :get %>
+
