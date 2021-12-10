@@ -1,5 +1,6 @@
-<p id="notice"><%= notice %></p>
-
+<div align="center"> 
+<p style="background-color:#343a3f" id="notice"><%= notice %></p>
+</div>
 
  <div style="border:1px solid black;margin-left:auto;margin-right:auto;" class="jumbotron bg-dark text-white ">
       <h1 style="text-align:center;"> Masterpeieces</h1>
@@ -7,9 +8,12 @@
   </div >
     <div style="background-color:#343a3f; border:1px solid black;margin-left:auto;margin-right:auto;" class="panel text-center">
       <p><h2> Essence of 'Portfolio' </h2></p>
-      <p> Witness the briliance of no skill web development, here, right before your vary eyes!!!</p>
+      <p> Witness the briliance of low skill web development, here, right before your vary eyes!!!</p>
+      <p> Below you will find some information describing projects that have been created during my time in college 
+          studying computer science. I know that reading about a project is not as enjoyable as being able to get your hands on them to explore, that is why you will be able to experiance two of them for yourself! </p>
+      <div align="right"> 
       <p> *blame your fingers, they led you here. </p>
-
+      </div>
     </div>
 </div>
 <div class="container py-4">
@@ -39,6 +43,7 @@
 </div>
 <br>
 
-<%= button_to 'New Project', new_project_path, method: :get %>
-
+<% if user_signed_in? %> 
+<%= button_to 'New Project', new_project_path, method: :get, class: 'btn btn-outline-light' %>
+<% end %>
 </div>

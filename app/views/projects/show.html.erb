@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<div align="center"> 
+<p style="background-color:#343a3f" id="notice"><%= notice %></p>
+</div>
 
 <p>
   <strong>Title:</strong>
@@ -11,10 +13,10 @@
 </p>
 
 <% if user_signed_in? %> 
-    <span style="margin-left:2.5em"><%= link_to 'Edit', edit_project_path(@project) %></span>
-    <span style="margin-left:2.5em"><%= link_to 'Back', projects_path %></span>
+    <span style="margin-left:2.5em"><%= link_to 'Edit', edit_project_path(@project), :class => "text-white" %></span>
+    <span style="margin-left:2.5em"><%= link_to 'Back', projects_path, :class => "text-white" %></span>
  <% else %>
-    <%= link_to 'Back', projects_path %>
+    <%= link_to 'Back', projects_path, :class => "text-white" %>
   <% end %>
 
 
